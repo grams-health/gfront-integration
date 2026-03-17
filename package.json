@@ -1,0 +1,12 @@
+{
+  "name": "gfront-integration",
+  "private": true,
+  "scripts": {
+    "build:frontend": "cd ../gfront/admin && VITE_API_BASE=http://localhost:6030/admin npx vite build",
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2"
+  }
+}
