@@ -81,8 +81,8 @@ def seed_admin(admin_url):
     _post(admin_url, "/ingredients", {"dish_id": 2, "food_id": 1, "quantity": 50, "preparation_id": 1})   # Apple, chopped
 
     # Dish bounds
-    _post(admin_url, "/dish_bounds", {"dish_id": 1, "max_quantity": 500, "min_quantity": 350})
-    _post(admin_url, "/dish_bounds", {"dish_id": 2, "max_quantity": 600, "min_quantity": 400})
+    _post(admin_url, "/dish_bounds", {"dish_id": 1, "upper_bound": 500, "lower_bound": 350})
+    _post(admin_url, "/dish_bounds", {"dish_id": 2, "upper_bound": 600, "lower_bound": 400})
 
     # Dish conversions
     _post(admin_url, "/dish_conversions", {"dish_id": 1, "raw_weight": 450, "cooked_weight": 380})
